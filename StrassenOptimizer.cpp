@@ -80,7 +80,7 @@ CacheMatrix multiply_strassen_optimized(const CacheMatrix& A, const CacheMatrix&
     // This part requires copying the quadrants back into one large matrix 'C' of size n
     CacheMatrix C(n);
     // Code to reassemble C from c11, c12, etc... 
-     CacheMatrix C(n);
+    
     for (int i = 0; i < m; ++i) {
         for (int j = 0; j < m; ++j) {
             C.data[i * n + j] = c11.data[i * m + j];
