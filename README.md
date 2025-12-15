@@ -1,2 +1,2 @@
-# Strassen-Matrix-Multiplication-CPP
-An optimized C++ implementation of Strassen's algorithm for fast matrix multiplication, achieving O(n^log2(7)) asymptotic complexity.
+# Cache-Optimized Adaptive Strassen Multiplier
+Standard Strassen multiplication is theoretically faster for large matrices (O(n².³⁷³) vs O(n³)). However, recursive overhead and inefficient CPU cache usage often make it slower than standard methods in practice for smaller matrices (e.g., N < 128).
